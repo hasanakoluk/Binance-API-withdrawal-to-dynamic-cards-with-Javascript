@@ -1,0 +1,71 @@
+
+body{
+   
+   background-color: indigo;
+   opacity: 50%;
+}
+
+.wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.card{
+   width: 250px;
+   height: 400px;
+   border: 1px solid black;
+   border-radius: 15px;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+   margin: auto;
+   background-color:rosybrown;
+   margin: 10px 10px;
+}
+
+.card:hover{
+   filter: contrast(200%);
+}
+.card-yazi{
+   color: white;
+   text-align: center;
+}
+
+.icerik{
+   width: inherit;
+   height: 800px;
+   text-align: center;
+   overflow:hidden;
+   color: white;
+   opacity: 0;
+   transition: linear 0.5s;
+}
+
+.icerik:hover{
+   opacity: 100%;
+   transform: translateY(-10px);
+   top: auto;
+   filter: contrast(200%);
+}
+  
+.icerik img{
+   width: 250px;
+   height: 230px;
+   border-radius: 15px 15px 0 0;
+   filter: contrast(200%);
+}
+
+@media(max-width:450px){
+   .wrapper{
+     width: 100%;
+     margin:auto;
+   }
+}
+
+@media(max-width:850px){
+   .wrapper{
+     width: 100%;
+     margin:auto;
+   }
+}
